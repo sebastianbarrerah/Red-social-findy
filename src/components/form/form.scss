@@ -1,0 +1,107 @@
+@import "./variables.scss";
+
+.loginAdmi{
+    
+    width: 30%;
+    margin: 30% 30%;
+    background-color: rgb(243, 243, 243);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family:  Arial, sans-serif;
+
+    &__botonDiv{ 
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    &__boton{
+        border-radius: 50px;
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__titulo{
+        margin: 0;
+        display: flex;
+        align-self: center;
+        color: $cafe;
+        font-family: $letraTitulos;
+        font-size: 45px;
+    }
+
+    &__span{
+        color: $oscuro;
+        font-weight: bolder;
+        margin-bottom: 3rem;
+        display: flex;
+        align-self: center;
+        font-family: $letraTareas;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 60%;
+        align-self: center;
+    }
+
+    &__label{
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+    }
+
+    &__labelSpan{
+        font-weight: bolder;
+        color:$oscuro ;
+        font-family: $letraCuerpo;
+        font-size: 20px;
+    }
+
+    &__labelInput{
+        border: none; 
+        border-bottom: 1px solid rgb(126, 126, 126);
+        color:$oscuro ;
+        font-size: 15px
+    }
+
+    &__btnIngresar{
+        background-color: $verde;
+        border-radius: 5px;
+        height: 4rem;
+        border: none;
+        color: white;
+        font-weight: bolder;
+        cursor: pointer;
+        margin-top: 2rem;
+        margin-bottom: 6rem;
+    }
+    &__btnIngresar:hover{
+        background-color: $oscuro;
+    }
+}
+
+@media(max-width: 500px){
+    .loginAdmi{
+        position: relative;
+        z-index: 1;
+        width: 80%;
+        margin: 30% 10%;
+        background-color: rgb(242, 242, 242);
+        border-radius: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-family:  Arial, sans-serif;
+    
+    }
+
+}
